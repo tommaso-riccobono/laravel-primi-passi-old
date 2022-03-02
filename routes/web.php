@@ -9,9 +9,7 @@ Route::get('/', function () {
 });
 
 Route::get('/link', function () {
-
     $data = [
         'link' => 'www.mondialxoo.it'
     ];
-    return view('link', $data);
-});
+    return view('link', $data);})->name('link');
